@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Application for dating</h1>
+      <h3>
+        <b>Note:</b> Form is to be completed at least 21 days prior to date
+      </h3>
+    </header>
+    <main>
+      <fieldset>
+        <legend>
+          <h3>Personal Details</h3>
+        </legend>
+        <div>
+          <label id="name-label" for="name">Name:</label>
+          <input
+            type="text"
+            required
+            id="name"
+            name="user_name"
+            placeholder="Enter name here"
+          />
+           
+        </div>
+        <div>
+          <label for="address-label">Address:</label>
+          <input
+            type="Address"
+            id="address"
+            name="Address"
+            placeholder="Enter address here"
+          />
+           
+        </div>
+        <div>
+          <label id="email-label" for="Email">Email:</label>
+          <input
+            type="email"
+            required
+            id="email"
+            name="user_email"
+            placeholder="Enter email here"
+          />
+           
+        </div>
+        <div>
+          <label id="number-label" for="phone">Phone Number:</label>
+          <input
+            type="number"
+            id="number"
+            name="user_name"
+            placeholder="Enter 10 digit number"
+            min="1"
+            max="9"
+          /> 
+        </div>
+        <div>
+          <label id="iq-label" for="iq">IQ:</label>
+          <input type="number" id="iq" name="iq" placeholder="Enter IQ here" />
+        </div>
+        <br />
+        <div>
+          <label>Gender:</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="male" value="male" checked />
+          <label for="male">Male</label>
+          <br />
+        </div>
+        <div class="radio">
+          <input type="radio" name="female" value="female" />
+          <label for="female">Female</label>
+          <br />
+        </div>
+        <br />
+        <div>
+          <label for="bday">Date:</label>
+          <input type="date" name="bday" />
+        </div>
+      </fieldset>
+      <fieldset class="checkboxes">
+        <legend>
+          <h3>Check All That Apply</h3>
+        </legend>
+        <div>
+          <input type="checkbox" name="tattoo" value="tattoo" />
+          <label for="tattoo"> I have tattoos and/or piercings</label>
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="age" value="Car" />
+          <label for="age">
+            I am more than 2 years older than my daughter</label
+          >
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="car" value="car" />
+          <label for="car"> I own a panel van or V8 ute</label>
+          <br />
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="work" value="work" checked />
+          <label for="work"> I work full-time</label>
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="rich" value="rich" checked />
+          <label for="rich"> My parents are rich</label>
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="loc" value="loc" checked />
+          <label for="loc"> Is the date at a well lit public location</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h3>Political Persuasion</h3>
+        </legend>
+        <div>
+          <select id="dropdown">
+            <option value="left">Left Wing</option>
+            <option value="right">Right Wing</option>
+            <option value="conservative">Conservative</option>
+            <option value="nazi">Nazi</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Education Level Completed</h3>
+        </legend>
+        <div>
+          <select id="dropdown2">
+            <option value="University">University</option>
+            <option value="College">College</option>
+            <option value="Secondary">High School</option>
+            <option value="None">None</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h3>Essay Section</h3>
+        </legend>
+        <div>
+          <label for="msg"></label>
+          <p>In 50 words or more explaining</p>
+        </div>
+        <br />
+        <div>
+          <textarea
+            id="msg"
+            name="user_message"
+            placeholder="Enter Text Here"
+            rows="4"
+            cols="30"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="msg"
+            >Please upload contact details for 2 references</label
+          >
+        </div>
+        <br />
+        <div>
+          <textarea
+            id="msg2"
+            name="user_message"
+            placeholder="Enter Text Here"
+            rows="4"
+            cols="30"
+          ></textarea>
+        </div>
+        <br />
+        <p>
+          Upload Police Clearance Certificate, Bank Statement and Medical
+          Certifiates here:
+        </p>
+        <br />
+        <div class="botton-container">
+          <button>Attach Files</button>
+        </div>
+      </fieldset>
+
+      <div class="submitbutton">
+        <div class="botton-container">
+          <button type="submit" class="submit" height="70px">
+            Send your application
+          </button>
+        </div>
+
+         
+      </div>
+    </main>
+  </body>
+</html>

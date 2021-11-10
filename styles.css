@@ -1,0 +1,102 @@
+body {
+  margin: 2%;
+  border-radius: 10%;
+  font-family: 'Anaheim';
+  font-size: 1.2em;
+  color: #1a001a;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main {
+  width: 30%;
+  padding: 5% 10%;
+  background: #ffccff;
+  border-radius: 10%;
+  border: 5px solid #1a001a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 200px;
+}
+header {
+  text-align: center;
+}
+fieldset {
+  min-inline-size: 200px;
+}
+input::placeholder {
+  opacity: 1;
+  color: #1a0011;
+  border: 0px;
+  outline: none;
+  padding: 5px;
+}
+input:not([type='checkbox']):not([type='radio']):not([type='date']) {
+  background: #ff99dd;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  color: #1a0011;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+input[type='date'] {
+  background: #ff99dd;
+  height: 30px;
+  padding: 5px;
+  width: 40%;
+  color: #1a0011;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+/* div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+} */
+button {
+  background: #ff99dd;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  border: 2px solid #1a001a;
+  width: 30%;
+}
+.botton-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  padding: 5px;
+}
+.field_set {
+  border: 1px #1a001a solid;
+  border-top-color: #1a001a;
+  border-right-color: #1a001a;
+  border-bottom-color: #1a001a;
+  border-left-color: #1a001a;
+}
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.radio {
+  font-size: 0.7em;
+}
